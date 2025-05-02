@@ -1,5 +1,6 @@
 import { FaUser, FaLock } from "react-icons/fa";
 import React, { useState } from "react";
+import styles from '../styles/Forms.module.css';
 
 export function LoginForm() {
   const [name, setName] = useState("");
@@ -11,10 +12,11 @@ export function LoginForm() {
   };
 
   return (
-    <form className="sign-up-form" onSubmit={handleSubmit}>
+    <form className={styles.container} onSubmit={handleSubmit}>
+      
+      <div className={styles.inputGroup}>
       <label htmlFor="name">Name</label>
-      <div className="input-group">
-        <FaUser className="input-icon" />
+        <FaUser className={styles.inputIcon} />
         <input
           type="text"
           placeholder="Name"
@@ -22,18 +24,20 @@ export function LoginForm() {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-      <label htmlFor="name">Password </label>
-      <div className="input-group">
-        <FaLock className="input-icon" />
+
+    
+      <div className={styles.inputGroup}>
+      <label className={styles.label} htmlFor="password">Password</label>
+        <FaLock className={styles.inputIcon} />
         <input
           type="text"
-          placeholder="password"
+          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
 
-      <button type="submit">Create account</button>
+      <button type="submit" className={styles.button}>Create account</button>
     </form>
   );
 }

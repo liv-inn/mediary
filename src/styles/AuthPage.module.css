@@ -1,0 +1,24 @@
+.container {
+    background-color: #fff;
+    width: 500px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #2F2E2E;
+  }
+  
+  .link{
+    color:#FF7F7F;
+    text-decoration: none;
+  }
+
+  

@@ -1,5 +1,6 @@
 import {FaEnvelope, FaLock, FaUser } from 'react-icons/fa'
 import React, { useState } from 'react';
+import styles from '../styles/Forms.module.css'
 
 export function SignUpForm(){
 
@@ -15,11 +16,12 @@ export function SignUpForm(){
     
 
     return(
-        <form className='sign-up-form' onSubmit={handleSubmit}>
+      <form className={styles.container} onSubmit={handleSubmit}>
 
-        <label htmlFor="name">Name</label>
-        <div className='input-group'>
-        <FaUser className='input-icon' />
+        
+        <div className={styles.inputGroup}>
+        <label className={styles.label} htmlFor="name">Name</label>
+        <FaUser className={styles.inputIcon} />
             <input type='text'
             placeholder='Name'
             value={name}
@@ -27,9 +29,10 @@ export function SignUpForm(){
             />
         </div>
 
-        <label htmlFor="name">E-mail</label>
-        <div className='input-group'>
-        <FaEnvelope className='input-icon' />
+
+        <div className={styles.inputGroup}>
+        <label className={styles.label} htmlFor="name">E-mail</label>
+        <FaEnvelope className={styles.inputIcon} />
             <input type='text'
             placeholder='Email'
             value={email}
@@ -37,18 +40,18 @@ export function SignUpForm(){
             />
         </div>
 
-        <label htmlFor="name">Password </label>
-        <div className='input-group'>
-        <FaLock className='input-icon' />
-            <input type='text'
-            placeholder='password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            />
+      <div className={styles.inputGroup}>
+      <label className={styles.label} htmlFor="password">Password</label>
+        <FaLock className={styles.inputIcon} />
+        <input
+          type="text"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
 
-        </div>
-
-            <button type='submit'>Create account</button>
+            <button className={styles.button} type='submit'>Create account</button>
             </form>
     )
     
