@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Card } from "../components/Card";
-import { FaBook, FaFilm, FaMusic } from 'react-icons/fa';
+import { FaTv, FaFilm, FaBook } from 'react-icons/fa';
 import homeStyles from '../styles/Home.module.css'
 
 
@@ -14,9 +14,9 @@ export function Home() {
             <Link className={homeStyles.link} to="/signup">Create a new account</Link>
 
 <div className={homeStyles.containerCard}>
-            <Card className={homeStyles.card} title="Books" icon={<FaBook />} />
+            <Card className={homeStyles.card} title="TV Shows" icon={<FaTv />} />
             <Card className={homeStyles.card} title="Movies" icon={<FaFilm />} />
-            <Card className={homeStyles.card} title="Music" icon={<FaMusic />} />
+            <Card className={homeStyles.card} title="Books" icon={<FaBook />} />
 </div>
         </div>
     );
