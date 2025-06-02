@@ -1,24 +1,23 @@
 import Logo from "../components/Logo";
-import FormCadastro from "../components/FormCadastro";
 import Animation from "../components/Animation";
+import FormLogin from "../components/FormLogin";
 
 function LandingPage() {
   return (
-    <div className="flex h-screen relative overflow-hidden">
+    <div className="flex h-screen relative overflow-hidden bg-[#E9E2F2]">
       <div className="absolute top-6 left-6 z-10">
         <Logo />
       </div>
 
-      <div className="flex-1 flex items-center justify-center bg-white px-4">
-        <FormCadastro />
+      <div className="flex-1 flex items-center justify-center px-8">
+        <FormLogin />
       </div>
 
-      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-[#F2B4AE] to-[#90eecc] px-4">
-        <div className="flex flex-col items-center justify-center overflow-hidden max-h-[90vh]">
+      <div className="flex-1 flex items-center justify-center px-8">
+        <div className="flex flex-col items-center justify-center overflow-hidden max-h-[90vh] text-center ">
           <Animation />
-          <p className="text-2xl text-[#F27C8A] font-semibold max-w-md text-center mt-6 absolute top-3/4">
-            Keep track of all your favorite movies, books, and TV shows in one
-            intuitive platform.
+          <p className="text-2xl text-[#6B4E71] font-semibold max-w-md  leading-relaxed">
+            Keep track of all your favorite books in one cozy, intuitive library.
           </p>
         </div>
       </div>
