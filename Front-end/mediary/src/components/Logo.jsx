@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 
 function Logo() {
   return (
-    <div className="flex items-center gap-2 m-4">
+    <div className="flex items-center gap-2 m-4 justify-center">
       <h1
         className="text-3xl font-bold bg-clip-text text-transparent"
         style={{

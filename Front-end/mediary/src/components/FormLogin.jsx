@@ -11,7 +11,7 @@ function FormLogin() {
   };
 
   return (
-    <div className="w-full max-w-md rounded-lg mt-2 p-10 shadow-lg bg-white border border-[#E9E2F2]">
+<div className="w-full max-w-lg rounded-lg mt-2 p-12 shadow-lg bg-white border border-[#E9E2F2] min-h-[480px]">
       <h3 className="text-3xl font-bold text-[#6B4E71] mb-1">Welcome back!</h3>
       <p className="text-[#9E91A8] mb-8">Sign in to your account</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
@@ -53,7 +53,7 @@ function FormLogin() {
 
         <button
           type="submit"
-          className="bg-gradient-to-r from-[#F2B4AE] to-[#9AD9C2] text-[#6B4E71] font-semibold rounded-lg py-3 hover:from-[#E9A39E] hover:to-[#7BC1A6] transition-colors shadow-md"
+          className="bg-[#837D88] text-[#FFF] font-semibold rounded-lg py-3 hover:from-[#E9A39E] hover:to-[#7BC1A6] transition-colors shadow-md"
         >
           Sign In
         </button>
