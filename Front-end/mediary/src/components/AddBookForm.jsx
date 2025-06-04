@@ -15,7 +15,7 @@ function AddBookForm() {
   ];
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6 h-auto">
+    <div className=" w-1/2 bg-white rounded-xl shadow-xs border border-gray-200 p-6 h-auto">
       <h3 className="text-lg font-semibold text-[#6B4E71] mb-4">Add a Book</h3>
 
       <form className="flex flex-col gap-4">
