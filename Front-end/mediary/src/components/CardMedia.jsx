@@ -1,6 +1,6 @@
 function CardMedia({ nome, genero, autor, status, icon }) {
   return (
-    <div className="bg-white w-full rounded-lg h-32 border border-[#E0E0E0] p-4 flex gap-4 hover:shadow-xs">
+    <div className="bg-white w-full rounded-xl h-32 p-4 flex gap-4 shadow-sm">
       <div className="flex items-center justify-center bg-[#B8E7FC] rounded-lg w-16 h-20">
         <p className="text-3xl">{icon}</p>
       </div>

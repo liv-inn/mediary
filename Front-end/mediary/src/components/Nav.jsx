@@ -4,29 +4,40 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
     <nav className="flex justify-between items-center px-8 bg-white shadow-sm p-6">
-      <Logo />
-      <ul className="flex gap-10 text-[#633D68] font-medium">
+        <Logo />
+      <ul className="flex gap-8 text-[#633D68] font-medium items-center">
+       
         <li>
-          <Link to="/signup" className="hover:text-[#8D4997] transition-colors">
-            Sign Up
+          <Link 
+            to="/books" 
+            className="flex items-center gap-2 hover:text-[#8D4997] transition-colors"
+          >
+            <span>Books</span>
           </Link>
         </li>
         <li>
-          <Link to="/profile" className="hover:text-[#8D4997] transition-colors">
-            Profile
+          <Link 
+            to="/movies" 
+            className="flex items-center gap-2 hover:text-[#8D4997] transition-colors"
+          >
+            <span>Movies</span>
           </Link>
         </li>
         <li>
-          <Link to="/books" className="hover:text-[#8D4997] transition-colors">
-            Books
+          <Link 
+            to="/music" 
+            className="flex items-center gap-2 hover:text-[#8D4997] transition-colors"
+          >
+            <span>Music</span>
           </Link>
         </li>
+      
         <li>
           <Link
-            to="/landing_page"
-            className="bg-[#8b7bb8] text-[#fff] px-6 py-3 rounded-lg hover:bg-[#8D4997] hover:text-white transition-colors"
+            to="/mylibray"
+            className="flex items-center gap-2 bg-[#8b7bb8] text-white px-4 py-2 rounded-lg hover:bg-[#633D68] transition-colors"
           >
-            Sign In
+            <span>My Library</span>
           </Link>
         </li>
       </ul>

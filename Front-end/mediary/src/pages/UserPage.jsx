@@ -15,7 +15,7 @@ function UserPage() {
           Media Dashboard
         </h2>
         <p className="text-sm text-[#837C7B] mb-6">
-          Organize your personal bookshelf
+          Organize and explore your books, music, and movies in one place.{" "}
         </p>
       </div>
 

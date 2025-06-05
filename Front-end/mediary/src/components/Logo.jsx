@@ -1,4 +1,5 @@
 import { FaBookBookmark } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Logo() {
   return (
@@ -6,8 +7,9 @@ function Logo() {
       <FaBookBookmark className="text-[#8b7bb8] text-2xl" />
       <h1
         className="text-3xl font-bold text-[#8b7bb8]"
-      >
+      > <Link to="/home">
         Mediary
+        </Link>
       </h1>
     </div>
   );

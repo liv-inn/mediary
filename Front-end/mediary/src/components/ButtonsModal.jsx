@@ -10,7 +10,7 @@ function ButtonsModal() {
   const closeModal = () => setActiveModal(null);
 
   return (
-    <div className="p-6 bg-white rounded-2xl border border-[#E0E0E0] shadow-xs flex  gap-4 justify-between">
+    <div className="p-6 bg-white rounded-xl shadow-sm flex  gap-4 justify-between">
       <h2 className="text-xl font-bold text-[#1f2937]  flex items-center">Add a New Media</h2>
 
       <div className="flex gap-4">

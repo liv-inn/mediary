@@ -1,6 +1,6 @@
 function GetToKnowMe() {
   return (
-    <div className="w-full max-w-md mx-auto p-8 bg-[#8b7bb8] rounded-2xl border border-gray-200 shadow-md flex flex-col gap-4">
+    <div className="w-full max-w-md mx-auto p-8 bg-[#8b7bb8] rounded-xl shadow-sm flex flex-col gap-4">
       <h3 className="text-2xl  text-white  ">
         Get to know me! ✨
       </h3>
