@@ -9,25 +9,25 @@ function ButtonsModal() {
   const closeModal = () => setActiveModal(null);
 
   return (
-    <div className="p-6 bg-white border border-gray-200 rounded flex justify-between">
-      <h2 className="text-xl mb-4 text-[#6B4E71] font-bold">Add a New Media</h2>
+    <div className="p-6 bg-white rounded-2xl border border-[#E0E0E0] shadow-xs flex flex-col gap-4">
+      <h2 className="text-xl font-bold text-[#633D68]">Add a New Media</h2>
 
       <div className="flex gap-4">
         <button
           onClick={() => setActiveModal("book")}
-          className="bg-[#6B4E71] text-white px-4 py-2 rounded hover:bg-[#5b3b62]"
+          className="bg-[#b798bb] text-white px-4 py-2 rounded-lg hover:bg-[#633D68] transition-colors"
         >
           Add Book
         </button>
         <button
           onClick={() => setActiveModal("movie")}
-          className="bg-[#6B4E71] text-white px-4 py-2 rounded hover:bg-[#5b3b62]"
+          className="bg-[#b798bb] text-white px-4 py-2 rounded-lg hover:bg-[#633D68] transition-colors"
         >
           Add Movie
         </button>
         <button
           onClick={() => setActiveModal("music")}
-          className="bg-[#6B4E71] text-white px-4 py-2 rounded hover:bg-[#5b3b62]"
+          className="bg-[#b798bb] text-white px-4 py-2 rounded-lg hover:bg-[#633D68] transition-colors"
         >
           Add Music
         </button>
