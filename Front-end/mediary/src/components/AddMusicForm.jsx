@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 
-function AddBookForm({ onClose }) {
+function AddMusicForm({ onClose }) {
   const [selectedColor, setSelectedColor] = useState("");
 
   const colors = [
@@ -17,30 +17,28 @@ function AddBookForm({ onClose }) {
 
   return (
     <Modal onClose={onClose}>
-      <h3 className="text-lg font-semibold text-[#6B4E71] mb-4">Add a Book</h3>
+      <h3 className="text-lg font-semibold text-[#6B4E71] mb-4">Add Music</h3>
       <form className="flex flex-col gap-4">
         <div className="flex flex-col">
           <label htmlFor="title" className="text-sm text-gray-600">
             Title
           </label>
           <input
-            required
             type="text"
-            name="title"
             id="title"
+            required
             className="border border-gray-300 rounded px-3 py-2"
           />
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="author" className="text-sm text-gray-600">
-            Author
+          <label htmlFor="artist" className="text-sm text-gray-600">
+            Artist
           </label>
           <input
-            required
             type="text"
-            name="author"
-            id="author"
+            id="artist"
+            required
             className="border border-gray-300 rounded px-3 py-2"
           />
         </div>
@@ -50,48 +48,38 @@ function AddBookForm({ onClose }) {
             Genre
           </label>
           <input
-            required
             type="text"
-            name="genre"
             id="genre"
+            required
             className="border border-gray-300 rounded px-3 py-2"
           />
         </div>
 
         <div className="flex flex-col">
           <label htmlFor="status" className="text-sm text-gray-600">
-            Reading Status
+            Listening Status
           </label>
           <select
-            required
-            name="status"
             id="status"
+            required
             className="border border-gray-300 rounded px-3 py-2"
           >
             <option value="">Select status</option>
-            <option value="reading">Reading</option>
-            <option value="completed">Completed</option>
-            <option value="wantToRead">Want to Read</option>
+            <option value="listening">Listening</option>
+            <option value="listened">Listened</option>
+            <option value="wantToListen">Want to Listen</option>
           </select>
         </div>
 
         <div className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            name="isRead"
-            id="isRead"
-            className="accent-[#6B4E71]"
-          />
-          <label htmlFor="isRead" className="text-sm text-gray-600">
-            Mark as read
+          <input type="checkbox" id="isListened" className="accent-[#6B4E71]" />
+          <label htmlFor="isListened" className="text-sm text-gray-600">
+            Mark as listened
           </label>
         </div>
 
-        <div className="flex  flex-col">
-          <label className="block text-sm text-gray-600 mb-2">
-            Cover Color
-          </label>
-
+        <div className="flex flex-col">
+          <label className="text-sm text-gray-600 mb-2">Cover Color</label>
           <div className="flex gap-3">
             {colors.map((color) => (
               <button
@@ -121,4 +109,4 @@ function AddBookForm({ onClose }) {
   );
 }
 
-export default AddBookForm;
+export default AddMusicForm;
