@@ -24,7 +24,7 @@ function Nav() {
         <li>
           <Link
             to="/landing_page"
-            className="bg-[#b798bb] text-[#fff] px-6 py-3 rounded-lg hover:bg-[#8D4997] hover:text-white transition-colors"
+            className="bg-[#8b7bb8] text-[#fff] px-6 py-3 rounded-lg hover:bg-[#8D4997] hover:text-white transition-colors"
           >
             Sign In
           </Link>

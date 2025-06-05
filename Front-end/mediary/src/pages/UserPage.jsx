@@ -11,7 +11,7 @@ function UserPage() {
       <Nav />
 
       <div className="flex ml-6 mt-6 flex-col w-full">
-        <h2 className="text-xl text-[#633D68] font-semibold">
+        <h2 className="text-xl text-[#1f2937] font-semibold">
           Media Dashboard
         </h2>
         <p className="text-sm text-[#837C7B] mb-6">
