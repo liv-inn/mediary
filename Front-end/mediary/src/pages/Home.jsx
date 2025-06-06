@@ -27,7 +27,7 @@ function Home() {
             <CardHome nome="Movies" icone={<FaFilm />} />
           </div>
 
-          <Link to = "/user_page" className="bg-[#8b7bb8] text-white px-6 py-2 rounded-full hover:bg-[#633D68] transition-colors">
+          <Link to = "/mycollection" className="bg-[#8b7bb8] text-white px-6 py-2 rounded-full hover:bg-[#633D68] transition-colors">
             Explore your collection
           </Link>
         </section>

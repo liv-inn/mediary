@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 import SearchBar from "../components/SearchBar";
 import UserCard from "../components/UserCard";
 
-function UserPage() {
+function MyCollection() {
   return (
     <main className="w-full h-screen bg-[#F8FBFF] flex flex-col">
       <Nav />
@@ -51,4 +51,4 @@ function UserPage() {
   );
 }
 
-export default UserPage;
+export default MyCollection;

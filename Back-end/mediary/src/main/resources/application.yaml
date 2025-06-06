@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mediary
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      platform: postgres
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

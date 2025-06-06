@@ -34,10 +34,10 @@ function Nav() {
       
         <li>
           <Link
-            to="/mylibray"
+            to="/mycollection"
             className="flex items-center gap-2 bg-[#8b7bb8] text-white px-4 py-2 rounded-lg hover:bg-[#633D68] transition-colors"
           >
-            <span>My Library</span>
+            <span>My Collection</span>
           </Link>
         </li>
       </ul>

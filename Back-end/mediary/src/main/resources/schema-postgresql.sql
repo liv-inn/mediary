@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    nick_name VARCHAR(50) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS media (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    genre VARCHAR(50),
+    owner VARCHAR(100),
+    status VARCHAR(20) NOT NULL,
+    type VARCHAR(10) NOT NULL,
+    cover_color VARCHAR(20),
+    user_id INTEGER REFERENCES users(id)
+);
+
+CREATE TABLE IF NOT EXISTS reviews (
+    id SERIAL PRIMARY KEY,
+    media_id INTEGER REFERENCES media(id),
+    user_id INTEGER REFERENCES users(id),
+    rating INTEGER CHECK (rating BETWEEN 1 AND 5),
+    comment TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
